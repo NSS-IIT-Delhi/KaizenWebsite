@@ -1,0 +1,451 @@
+/**
+* @author    dezign.com http://www.ninodezign.com
+* @copyright Copyright (C) 2016 Ninodezign.com. All rights reserved.
+* @license   Ninodezign.com Proprietary License
+*/
+/* ============================== DEFAULT HTML ============================== */
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+@import "https://fonts.googleapis.com/css?family=Kaushan+Script";
+html,
+header {
+    height: 100%;
+}
+body {
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    color: #999;
+    font-size: 13px;
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block;
+}
+hr {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #e5e5e5;
+    color: #f4f4f4;
+    margin: 20px 0;
+    padding: 0;
+}
+/* =============== DEFAULT HTML - LINK STYLES =============== */
+a {
+    text-decoration: none;
+    font-style: oblique;
+    outline: none;
+    color: #2ec06c;
+    /* -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; */
+
+    -webkit-transition: color 1s ease-out;
+    -moz-transition: color 1s ease-out;
+    -o-transition: color 1s ease-out;
+    transition: color 1s ease-out;
+}
+.nino-sectionHeading {
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transform-origin: bottom;
+    animation-name: bounce-6;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-6 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    10% {
+        transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+        transform: scale(0.9, 1.1) translateY(-100px);
+    }
+    50% {
+        transform: scale(1.05, 0.95) translateY(0);
+    }
+    57% {
+        transform: scale(1, 1) translateY(-7px);
+    }
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+a:hover {
+    color: #666;
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+}
+a img {
+    border: none;
+}
+a[class*="glyphicon-"] {
+    text-decoration: none;
+}
+/* =============== DEFAULT HTML - HEADING STYLES =============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 5px 0 10px;
+    color: #333;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+h1,
+h2 {
+    font-weight: 300;
+}
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 18px;
+}
+h5,
+h6 {
+    font-size: 1em;
+}
+/* =============== DEFAULT HTML - LIST STYLES =============== */
+ul,
+ul li,
+ol,
+ol li,
+p,
+form,
+input {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin-bottom: 10px;
+}
+ul,
+ul li {
+    list-style: none;
+}
+/* =============== DEFAULT HTML - IMAGES STYLES =============== */
+img {
+    border: none;
+    max-width: 100%;
+}
+img.image-left {
+    float: left;
+    margin-right: 5px;
+}
+img.img-full-width {
+    width: 100%;
+}
+/* =============== PREDEFINED CONTENT ALIGN =============== */
+.margin-left {
+    margin-left: 1em !important;
+    margin-right: 0;
+}
+.margin-right {
+    margin-left: 0;
+    margin-right: 1em !important;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - GENERAL LAYOUT =============== */
+.container {
+    position: relative;
+}
+[layout="row"] {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.fsr {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+.fg {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+.fw {
+    flex-wrap: wrap;
+}
+.verticalStretch {
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+}
+.verticalCenter {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.nino-btn {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 25px;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 100%;
+}
+.nino-btn:hover {
+    color: #fff;
+    background-color: #776faa;
+    font-weight: bold;
+
+    font-style: italic;
+}
+.bg-white {
+    background-color: #fff !important;
+}
+
+/* =============== LAYOUT - HEADER AREA =============== */
+#nino-header {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    background: url(../images/bg-header.jpg) no-repeat center center / cover;
+}
+#nino-header:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+        197,
+        142,
+        235,
+        0.5
+    ); /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+        top,
+        rgba(129, 243, 237, 0.6),
+        rgba(206, 138, 252, 0.5)
+    );
+    background: -o-linear-gradient(
+        top,
+        rgba(129, 243, 167, 0.5),
+        rgba(138, 174, 252, 0.5)
+    );
+    /* background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%); */
+
+    background: linear-gradient(
+        to bottom,
+        rgba(88, 216, 94, 0.7),
+        rgba(168, 138, 252, 0.7)
+    );
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#nino-headerInner {
+    position: relative;
+    z-index: 5;
+}
+/* =============== MAIN SLIDER =============== */
+#nino-slider {
+    padding: 40px 0 0;
+}
+#nino-slider .carousel-inner {
+    height: 400px;
+}
+#nino-slider .carousel-inner > .item {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+#nino-slider .carousel-indicators {
+    width: 100%;
+    left: 0;
+    margin: 0;
+    position: static;
+    margin-top: 100px;
+    font-weight: 600;
+}
+#nino-slider .carousel-indicators li,
+#nino-slider .carousel-indicators li.active {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin: 0;
+    text-indent: initial;
+    border-radius: 0;
+    background: none;
+    text-align: left;
+    border: none;
+}
+#nino-slider .carousel-indicators li .inner {
+    border-top: 2px solid #2d1c77;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding-left: 80px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(106, 78, 143);
+    font-style: oblique;
+}
+#nino-slider .carousel-indicators li:hover .inner,
+#nino-slider .carousel-indicators li.active .inner {
+    border-color: rgb(112, 137, 165);
+    color: rgb(44, 22, 126);
+
+    font-weight: bold;
+    font-style: italic;
+}
+#nino-slider .carousel-indicators li:hover .inner:after,
+#nino-slider .carousel-indicators li.active .inner:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 60px;
+    height: 2px;
+    background: #1e0644;
+}
+#nino-slider .carousel-indicators li .number {
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 3px;
+}
+/* =============== LAYOUT - MENU AREA =============== */
+#nino-navbar {
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+#nino-navbar .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+#nino-navbar .navbar-nav > li > a {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    padding: 15px 5px 5px;
+    margin: 0 12px;
+}
+#nino-navbar .navbar-nav > li > a:hover,
+#nino-navbar .navbar-nav > .active > a,
+#nino-navbar .navbar-nav > .active > a:hover {
+    color: #fce38a;
+    border-color: #a38afc;
+    background: none;
+    font-weight: bold;
+    border-bottom: 2px solid #fce38a;
+    border-radius: 5px;
+    transition-property: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#nino-navbar .nino-menuItem {
+    float: right;
+}
+#nino-navbar .nino-iconsGroup li a {
+    border: none;
+    font-size: 18px;
+}
+#nino-navbar .navbar-toggle {
+    margin-right: 0;
+    border: none;
+}
+#nino-navbar .navbar-toggle:hover,
+#nino-navbar .navbar-toggle:focus {
+    background: none;
+}
+#nino-navbar .navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+/* =============== LAYOUT - CONTENT AREA =============== */
+section {
+    padding: 80px 0;
+}
+#nino-slider .nino-sectionHeading {
+    font-size: 110px;
+    color: #fff;
+    cursor: context-menu;
+}
+#nino-slider .nino-sectionHeading .nino-subHeading {
+    font-size: 55px;
+    cursor: context-menu;
+}
+#nino-slider .nino-sectionHeading:after {
+    background: #fff;
+}
+.nino-sectionHeading {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+.nino-sectionHeading:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #f38181;
+    transform: translateX(-50%);
+}
+.nino-sectionHeading .nino-subHeading {
+    display: block;
+    text-transform: none;
+    font-weight: 400;
+    font-family: "Kaushan Script", cursive;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.nino-sectionDesc {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+}
