@@ -1,0 +1,92 @@
+
+.copyright{
+  text-align:center;
+}
+footer {
+	padding-top: 50px;
+	background-color: #f1f9ec;
+}
+#fb{
+
+	font-size: 23px;
+  color:#4267B2;
+  font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+
+}
+#fblogo,#instalogo
+{
+  height:30px;
+}
+#twitterlogo{
+  height:50px;
+}
+#QUICK{
+  font-size: 20px;
+  color:#4267B2;
+  font-family: 'Merriweather', serif;
+}
+footer ul{
+  color:#f0dccc;
+}
+footer a {
+  color:black;
+}
+
+#Achivements{
+  color:black;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 20px;
+  font-weight:200;
+}
+#about_us{
+  color:black;
+
+}
+#submit_btn{
+  font-size: 14px
+}
+footer .col_1_2{
+  border-color: #e7e7e7;
+	box-shadow: none;
+	font-style: italic;
+	font-size: 15px;
+
+}
+footer .col_1_2 [type=button] {
+  border-radius: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+
+	background: #2699ab;
+	border: none;
+}
+footer .col_1_2 [type=email]{
+  border-radius: 5px;
+  border-color: #ccddf0;
+  font-weight: bold;
+}
+footer .col-sm-4{
+  padding-left:80px
+}
+#QUERY{
+  font-size: 20px;
+  color:#4267B2;
+  font-family: 'Merriweather', serif;
+}
+#nss{
+  color:blue;
+}
+footer .col_2_1 [type=text],
+footer .col_2_1 [type=email] {
+  height:35px;
+  border-radius: 5px;
+  border-color: #ccddf0;
+  font-weight: bold;
+}
+footer textarea{
+  border-radius: 5px;
+  border-color: #ccddf0;
+  font-weight: bold;
+}

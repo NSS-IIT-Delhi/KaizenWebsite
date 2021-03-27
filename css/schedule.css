@@ -1,0 +1,17 @@
+
+
+#r1_schedule{
+  display: block;
+	text-transform: none;
+	font-family: 'Tangerine', cursive;
+	font-size: 40px;
+
+	margin-bottom: 15px;
+}
+#r2_schedule{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 4000;
+}
+.schedule{
+  text-align:center;
+}
