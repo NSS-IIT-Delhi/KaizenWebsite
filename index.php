@@ -248,7 +248,7 @@ Interaction and opinion sharing is the prime focal point of Kaizen. It aims at p
 				NGOs
 			</h2>
 	<div class="customer-logos" style="padding-top: 20px">
-  <!-- <?php
+  <?php
 	$dirname = "images/Logos/NGOs/";
 	$images = glob($dirname."*.jpg");
 	$imagesp = glob($dirname."*.png");
@@ -260,7 +260,7 @@ Interaction and opinion sharing is the prime focal point of Kaizen. It aims at p
 	}
 	echo $imagelist; //<<<<<
 	echo $imagelistp; //<<<<<
-	?> -->
+	?>
 </div>
 
     <!-- Unique Design
