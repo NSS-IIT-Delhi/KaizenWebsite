@@ -55,6 +55,14 @@
     border: 1px solid #888;
     width: 80%;
 }
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
 
 </style>
 	
@@ -65,6 +73,10 @@
 	<!-- Header
     ================================================== -->
 	<header id="nino-header">
+		<!-- The video -->
+		<video autoplay muted loop id="myVideo">
+		  <source src="public/video/Teaser.mp4" type="video/mp4">
+		</video>
 		<div id="nino-headerInner">					
 			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
 				<div class="container">
@@ -258,7 +270,7 @@ Interaction and opinion sharing is the prime focal point of Kaizen. It aims at p
     		
 			<div class="sectionContent">
 				<div class="nino-devices">
-<iframe width="70%" height="480" src="https://www.youtube.com/embed/vgT5xXpKCOs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br><br>
+<iframe width="70%" height="480" src="https://www.youtube.com/embed/0X-Ua5yMGAk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br><br>
 				</div>
 			</div>
     	</div>
@@ -279,7 +291,7 @@ Interaction and opinion sharing is the prime focal point of Kaizen. It aims at p
 				<span class="nino-subHeading"><img src="images/udaan.png"></h2>
 			<p class="nino-sectionDesc">
 				<font size="3px">
-				The event उड़ान will focus on the “journey” of leaders who brought about changes in society. It brings forward the idea of how one can work towards “collective happiness” and prosperity.	
+				We are elated to present उड़ान, the inaugural event of Kaizen 2021 in an all-new online avatar with our distinguished guests from various domains. This event will focus on the “journey” of leaders who brought about changes in society. It brings forward the idea of how one can work towards “collective happiness” and prosperity.
 				<br>
 			</p>
 			<div class="sectionContent">
@@ -290,14 +302,27 @@ Interaction and opinion sharing is the prime focal point of Kaizen. It aims at p
 						<div class="overlay" href="#">
 							<div class="content">
 								<p style="padding:5px; text-transform:none;">
-
+<b>About the speakers:</b>
+<ol style="text-transform: none;">
+	<li><b>Prof. Samrat Mukhopadhyay, Faculty Coordinator NSS IIT Delhi: </b>
+	He is the primary guiding force behind NSS IIT Delhi and works in diverse spheres to contribute to society and make the world a better place to live in.</li>
+	<br>
+	<li><b>Jaya Prakash Dabral, President, Himalayan Chipko Foundation: </b>
+	A recipient of the "India Awakened Award: Agents of Change 2012", he is an active environmentalist and a social activist, working for sustainability in rural areas.</li>
+	<br>
+	<li><b>Mr. Mahesh Sharma, Co-Founder, Shivganga Jhabua, Padma Shri: </b>
+	Also known as the ‘Gandhi of Jhabua’, his organization has been acting as the prime catalyst for all the social and developmental changes in Jhabua, Madhya Pradesh.</li>
+	<br>
+	<li><b>Ms. Lavanya Srinivas, Founder, Kathakshetra Trust in Chennai and Katha Kamamishu – a world of stories: </b>
+	She is a prominent speaker on positive psychology and narrative intelligence for personal growth & leadership on different forums.</li>
+</ol>
 								</p>
 							</div>
 							<img src="images/workshops/Inaugural.png" alt="">
 						</div>
 					</div>
 					<div class="info">
-						<h4 class="name">Udaan</h4>
+						<!-- <h4 class="name">Udaan</h4> -->
 						<span class="regency"><font size="3px">Attend the event : </font><a href="http://nss.iitd.ac.in/l/UdaanRegistration" id="myBtn"  target="_blank"><img src="images/registernow.gif" height="60px" width="150px"></a></span>
 					</div>
 				</div>
