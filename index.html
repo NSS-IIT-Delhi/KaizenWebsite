@@ -62,8 +62,33 @@
   min-width: 100%; 
   min-height: 100%;
 }
+#clockdiv {
+                font-family: sans-serif;
+                color: #fff;
+                display: inline-block;
+                font-weight: 100;
+                text-align: center;
+                font-size: 30px;
+            }
 
+            #clockdiv > div {
+                padding: 10px;
+                border-radius: 3px;
+				background:rgba(129, 243, 237, 0.6);
+				justify-content: center;
+                display: inline-block;
+            }
 
+            #clockdiv div > span {
+            
+                border-radius: 3px;
+                display: inline-block;
+            }
+
+            .smalltext {
+                padding-top: 5px;
+                font-size: 16px;
+            }
 </style>
 	
 </head>
@@ -122,12 +147,48 @@
 							<span class="nino-subHeading">Welcome<br>to</span>
 							KAIZEN '21
 						</h2>
-						<a href="http://nss.iitd.ac.in" target="_blank" class="nino-btn">An Initiative of NSS IIT Delhi</a><br><br>
+						<!-- <a href="http://nss.iitd.ac.in" target="_blank" class="nino-btn">An Initiative of NSS IIT Delhi</a><br><br>
 
-						<a href="public/files/brochure.pdf" target="_blank" class="nino-btn">Brochure</a>
+						<a href="public/files/brochure.pdf" target="_blank" class="nino-btn">Brochure</a> -->
+						<div id="clockdiv">
+                    <div>
+                        <span class="days"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                        <span class="hours"></span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                        <span class="minutes"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                        <span class="seconds"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div>
+						</div>
 					</div>
-					
-				</div>
+					<!-- <br clear="all">
+						<div id="clockdiv">
+                    <div>
+                        <span class="days"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                        <span class="hours"></span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                        <span class="minutes"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                        <span class="seconds"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div> -->
 
 				<!-- Indicators -->
 				<ol class="carousel-indicators clearfix">
@@ -336,7 +397,7 @@ Interaction and opinion sharing is the prime focal point of Kaizen. It aims at p
 					</div>
 					<div class="info">
 						<!-- <h4 class="name">Udaan</h4> -->
-						<span class="regency"><font size="3px">Attend the event : </font><a href="http://nss.iitd.ac.in/l/UdaanRegistration" id="myBtn"  target="_blank"><img src="images/registernow.gif" height="60px" width="150px"></a></span>
+						<span class="regency"><font size="3px">Attend the event : </font><a href="http://nss.iitd.ac.in/l/udaan" id="myBtn"  target="_blank"><img src="images/registernow.gif" height="60px" width="150px"></a></span>
 					</div>
 				</div>
 <div class="col-sm-3"></div>
@@ -1498,6 +1559,7 @@ You are required to come up with a model/idea and present it, through which this
 	<script type="text/javascript" src="js/logocrousel.js"></script>
 	<script src="js/data_a.js"></script>
 	<script src="js/query.js"></script>
+	<script src="js/timer.js"></script>
 								
 			
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
