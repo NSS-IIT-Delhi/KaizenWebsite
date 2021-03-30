@@ -14,9 +14,10 @@ type: "POST",
 url: "http://a17.herokuapp.com/query.php",
 dataType: 'json',
 data: {"name":name,"email":email,"query":query},
-cache: false,
+complete:function(result){
+    console.log(result);
+}
 });
-console.log("dataString: " + name+email+query);
 }
 return false;
 });
