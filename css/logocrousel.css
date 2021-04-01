@@ -106,8 +106,8 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-@media (max-width: 992px) {
+/*@media (max-width: 992px) {
     .content {
         display: none;
     }
-}
+}*/
